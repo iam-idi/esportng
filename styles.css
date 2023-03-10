@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    background-color: #151617;
+    height: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    /* overflow-x: hidden; */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    color: #fff;
+}
+
+h2,
+h3 {
+    color: #fff;
+}
+
+span {
+    color: #FDC605;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* section */
+
+section {
+    width: 1312px;
+    height: 100px;
+    position: relative;
+    top: 5px;
+    left: 21px;
+}
+
+h2 {
+    height: 48px;
+    width: 148px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    font-size: 36px;
+    font-weight: 500px;
+
+}
+
+.searchbox {
+    height: 26px;
+    width: 314px;
+    background-color: #212124;
+    position: relative;
+    left: 200px;
+    top: 40px;
+    border-radius: 5px;
+}
+
+input {
+    height: 26px;
+    width: 280px;
+    position: absolute;
+    background-color: #212124;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 18px;
+    right: 0px;
+    top: 0;
+    border: none;
+    padding: 3px 5px 3px 5px;
+
+}
+
+section i {
+    background-color: #212124;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500px;
+    position: absolute;
+    left: 10px;
+    top: 3.5px;
+
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 18px;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 525px;
+    gap: 59px;
+}
+
+ul li {
+    list-style-type: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 24px;
+
+}
+
+ul li:hover {
+    color: #FDC605;
+    transform: scale(1.5);
+}
+
+section button {
+    height: 50px;
+    width: 175px;
+    position: absolute;
+    left: 1136px;
+    top: 25px;
+    background-color: #FDC605;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 24px;
+    border: none;
+
+}
+
+section button:hover {
+    background-color: transparent;
+    border: 1px solid #FDC605;
+    color: #FDC605;
+}
+
+
+.holders {
+    background-color: #252831;
+    margin: 21px;
+    padding: 50px 60px;
+}
+
+
+/* holder1 */
+.bigtop {
+    width: 1312px;
+    height: 422px;
+    position: relative;
+    padding: 50px 80px;
+
+}
+
+.bigtop h3 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 54px;
+    margin: 20px 0 10px 0;
+}
+
+.bigtop p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #5A5656;
+
+}
+
+.regbtn {
+    width: 175px;
+    height: 50px;
+    background-color: #FDC605;
+    color: #000;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    margin: 40px 10px 40px 0px;
+    font-weight: 500px;
+}
+
+.regbtn:hover {
+    background-color: transparent;
+    border: 1px solid #FDC605;
+    color: #FDC605;
+}
+
+
+.watchbtn {
+    width: 175px;
+    height: 50px;
+    background-color: transparent;
+    color: #FDC605;
+    font-size: 18px;
+    line-height: 24px;
+    border: 1px solid #FDC605;
+    margin: 40px 0px 40px 10px;
+    font-weight: 500px;
+}
+
+.watchbtn:hover {
+    background-color: #FDC605;
+    color: #000;
+}
+
+.manleft {
+    height: 340px;
+    width: 502px;
+    position: absolute;
+    left: 521px;
+    bottom: 0px;
+}
+
+.mancenter {
+    height: 438px;
+    width: 481px;
+    position: absolute;
+    left: 689px;
+    bottom: 0px;
+}
+
+.manright {
+    height: 357px;
+    width: 511px;
+    position: absolute;
+    left: 866px;
+    top: 87px;
+
+}
+
+
+/* holder2 */
+.holder2 {
+    width: 646px;
+    height: 368px;
+    position: absolute;
+    top: 530px;
+    padding: 30px 40px;
+}
+
+.holder2 p {
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 21px;
+    text-align: left;
+
+}
+
+/* holder3 */
+.holder3 {
+    height: 113px;
+    width: 644px;
+    position: absolute;
+    left: 664px;
+    top: 530px;
+    padding: 30px 25px 30px 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.holder3 div {
+    border: 1px solid #fff;
+    height: 50px;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.holder3 p {
+    font-weight: 500px;
+    line-height: 20px;
+}
+
+/* holder4 */
+.holder4 {
+    height: 368px;
+    width: 646px;
+    position: absolute;
+    left: 664px;
+    top: 657px;
+    padding: 60px 0 50px 20px;
+}
+
+.holder4 h3 {
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: 54px;
+    text-align: left;
+
+}
+
+.holder4 p {
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 21px;
+    color: #5A5656;
+    font-style: medium;
+
+
+}
+
+.holder4 a i {
+    font-size: 20px;
+    margin: 40px 5px;
+}
+
+.holder4 a i:hover {
+    color: #FDC605;
+    transform: scale(1.5);
+}
+
+.coach {
+    height: 330px;
+    width: 420px;
+    position: absolute;
+    left: 160px;
+    bottom: 0px;
+
+}
+
+.player {
+    height: 352px;
+    width: 320px;
+    position: absolute;
+    left: 365px;
+    bottom: 0px;
+    z-index: 1;
+
+}
+
+
+
+/* holder5 */
+
+.holder5 {
+    height: 512px;
+    width: 646px;
+    /* background: linear-gradient(-45deg,); */
+
+    background: linear-gradient(130deg, 
+    #252831 55%, 
+    rgba(0, 0, 0, 0.71) 100%);
+
+    position: absolute;
+    top: 915px;
+
+}
+
+.holder5 h3 {
+    font-size: 48px;
+    font-weight: 500px;
+    line-height: 72px;
+    text-align: center;
+
+}
+
+.vrset {
+    height: 388px;
+    width: 694px;
+    position: absolute;
+    left: -25px;
+    top: 96px;
+
+}
+
+/* holder6 */
+.holder6 {
+    height: 405px;
+    width: 646px;
+    background-color: transparent;
+    position: absolute;
+    left: 664px;
+    top: 1040px;
+}
+
+.holder6 img {
+    height: 190px;
+    width: 312px;
+    border-radius: 3px;
+    position: absolute;
+}
+
+.game1 {
+    top: 0;
+    left: 0;
+}
+
+.game2 {
+    top: 0;
+    right: 0;
+}
+
+.game3 {
+    bottom: 0;
+    left: 0;
+}
+
+.game4 {
+    bottom: 0;
+    right: 0;
+}
+
+/* footer */
+footer{
+    margin: -40px auto 22px auto;
+}
+footer p {
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 24px;
+    text-align: center;
+
+}
