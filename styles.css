@@ -1,15 +1,16 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid #fff; */
 }
 
 body {
     font-family: Poppins;
     background-color: #151617;
-    height: 1500px;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -36,7 +37,7 @@ span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 1500px;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -166,7 +167,7 @@ section button:hover {
 .bigtop {
     width: 1312px;
     height: 422px;
-    position: relative;
+    position: absolute;
     padding: 50px 80px;
 
 }
@@ -240,7 +241,7 @@ section button:hover {
 
 .manright {
     height: 357px;
-    width: 511px;
+    width: 455px;
     position: absolute;
     left: 866px;
     top: 87px;
@@ -339,7 +340,7 @@ section button:hover {
 
 .player {
     height: 352px;
-    width: 320px;
+    width: 295px;
     position: absolute;
     left: 365px;
     bottom: 0px;
@@ -374,10 +375,10 @@ section button:hover {
 }
 
 .vrset {
-    height: 388px;
-    width: 694px;
+    height: 380px;
+    width: 650px;
     position: absolute;
-    left: -25px;
+    left: 0px;
     top: 96px;
 
 }
@@ -421,12 +422,21 @@ section button:hover {
 
 /* footer */
 footer{
-    margin: -40px auto 22px auto;
+    position: absolute;
+    left: 620px;
+    top: 1500px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+
 }
-footer p {
+/* footer p {
     font-size: 18px;
     font-weight: 500px;
     line-height: 24px;
     text-align: center;
 
-}
+} */
