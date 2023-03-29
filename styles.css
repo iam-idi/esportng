@@ -134,6 +134,7 @@ header button:hover {
 .holders {
     background-color: #252831;
     padding: 50px 60px;
+    
 }
 /* container */
 
@@ -223,7 +224,7 @@ header button:hover {
     height: 340px;
     width: 502px;
     position: absolute;
-    left: -140px;
+    left: -160px;
     bottom: 0px;
 }
 
@@ -231,15 +232,15 @@ header button:hover {
     height: 438px;
     width: 481px;
     position: absolute;
-    left: 30px;
+    left: 10px;
     bottom: 0px;
 }
 
 .manright {
     height: 357px;
-    width: 500px;
+    width: 460px;
     position: absolute;
-    left: 215px;
+    left: 185px;
     bottom: 0px;
 
 }
@@ -321,18 +322,18 @@ header button:hover {
 
 .coach {
     height: 330px;
-    width: 420px;
+    width: 400px;
     position: absolute;
-    left: 180px;
+    left: 160px;
     bottom: 0px;
 
 }
 
 .player {
     height: 352px;
-    width: 310px;
+    width: 280px;
     position: absolute;
-    left: 400px;
+    left: 350px;
     bottom: 0px;
     z-index: 1;
 
