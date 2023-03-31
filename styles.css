@@ -7,9 +7,9 @@ body {
   background-color: #151617;
 }
 
-img {
+/* img {
   border: 1px solid red;
-}
+} */
 
 main {
   display: grid;
@@ -389,7 +389,7 @@ footer {
     gap: 20px;
     align-items: center;
     justify-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   h2 {
