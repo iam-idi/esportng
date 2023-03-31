@@ -669,12 +669,19 @@ footer {
       padding: 10px 20px 5px;
     }
 
-    .vrset {
-      height: 280px;
-      width: 450px;
-      left: 30px;
-      top: 185px;
+    .holder5{
+      padding: 5px 10px 5px;
+      min-height: 200px;
+      max-height: 300px;
     }
+
+    .vrset {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:450px){
+    
   }
   
 }
