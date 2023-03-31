@@ -140,6 +140,7 @@ header button:hover {
   grid-auto-rows: minmax(100px, auto);
   column-gap: 20px;
   row-gap: 10px;
+  
 }
 
 /* holder1 */
@@ -377,6 +378,7 @@ footer {
 /* responsiveness */
 
 @media screen and (max-width: 1000px) {
+  
   main {
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(100px, auto);
@@ -486,202 +488,295 @@ footer {
     display: block;
     margin: 20px 0px 0px 0px;
   }
+}
 
-  @media screen and (max-width: 950px) {
-    .player {
-      display: none;
-    }
+@media screen and (max-width: 950px) {
+  .player {
+    display: none;
+  }
 
-    .vrset {
-      left: 50px;
-      top: 95px;
-    }
+  .vrset {
+    left: 100px;
+    top: 95px;
+  }
 
-    /* img {
+  /* img {
       border: 1px solid red;
     } */
 
-    .mancenter {
-      /* height: 400px; */
-      width: 420px;
-      left: -65px;
-    }
+  .mancenter {
+    /* height: 400px; */
+    width: 420px;
+    left: -65px;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-auto-rows: minmax(auto); */
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+    /* border: 1px solid red; */
   }
 
-  @media screen and (max-width: 798px) {
-    header {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      /* grid-auto-rows: minmax(auto); */
-      gap: 5px;
-      align-items: center;
-      justify-items: center;
-      /* border: 1px solid red; */
-    }
-
-    h2 {
-      grid-column: 1 / span 2;
-      grid-row: 1;
-    }
-
-    .searchbox {
-      grid-column: span 1;
-      grid-row: 2;
-    }
-
-    .links {
-      grid-column: span 2;
-      grid-row: 3;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      justify-items: center;
-      align-items: center;
-    }
-
-    header button {
-      grid-column: 2 / span 3;
-      grid-row: 2;
-    }
-
-    .bigtop {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      padding: 20px 30px;
-    }
-
-    .imgdiv {
-      bottom: -19.5px;
-    }
-
-    .mancenter {
-      height: 360px;
-      width: 380px;
-      bottom: 0;
-      left: -85px;
-    }
-
-    .holder3 {
-      height: 50%;
-      padding: 30px 25px 30px 25px;
-    }
-
-    .coach {
-      left: 200px;
-    }
-
-    .vrset {
-      height: 330px;
-      width: 600px;
-      left: 10px;
-      top: 105px;
-    }
+  h2 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
   }
 
-  @media screen and (max-width: 675px) {
-    .imgdiv {
-      display: none;
-    }
-
-    .bigtop {
-      padding: 10px 20px;
-      /* position: relative; */
-    }
-
-    /* .bigtop::before {
-      content: '';
-      background-image: url("images\image 1.png");
-      background-position: top center;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-
-    } */
-
-    .notediv {
-      grid-column: span 2;
-    }
-
-    .regbtn {
-      display: inline-block;
-      margin: 20px 10px 10px 0px;
-    }
-
-    .watchbtn {
-      display: inline-block;
-      margin: 40px 0px 10px 10px;
-    }
+  .searchbox {
+    grid-column: span 1;
+    grid-row: 2;
   }
+
+  .links {
+    grid-column: span 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  header button {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    height: 35px;
+    width: 100px;
+  }
+
+  .bigtop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px;
+  }
+
+  .imgdiv {
+    bottom: -19.5px;
+  }
+
+  .mancenter {
+    height: 360px;
+    width: 380px;
+    bottom: 0;
+    left: -85px;
+  }
+
+  .holder3 {
+    height: 50%;
+    padding: 30px 25px 30px 25px;
+  }
+
+  .coach {
+    left: 200px;
+  }
+
+  .vrset {
+    height: 330px;
+    width: 600px;
+    left: 10px;
+    top: 105px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .imgdiv {
+    display: none;
+  }
+
+  .bigtop {
+    padding: 10px 20px;
+  }
+
+  .notediv {
+    grid-column: span 2;
+  }
+
+  .regbtn {
+    display: inline-block;
+    margin: 20px 10px 10px 0px;
+  }
+
+  .watchbtn {
+    display: inline-block;
+    margin: 40px 0px 10px 10px;
+  }
+
   .coach {
     height: 260px;
     width: 300px;
     left: 210px;
   }
-
+  
   .vrset {
     height: 280px;
     width: 450px;
-    left: 30px;
-    top: 115px;
+    left: 65px;
+    top: 118px;
+  }
+}
+
+
+@media screen and (max-width: 590px) {
+  /* header,
+  .holders {
+    overflow: hidden;
+  } */
+}
+
+@media screen and (max-width: 566.4px) {
+  .vrset {
+    height: 280px;
+    width: 450px;
+    left: 45px;
+    top: 190px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header button {
+    font-size: 15px;
+    font-weight: 300px;
+    line-height: 20px;
   }
 
-  @media screen and (max-width: 675px){
-    .vrset {
-      height: 280px;
-      width: 450px;
-      left: 30px;
-      top: 185px;
-    }
+  .coach {
+    display: none;
   }
 
-  @media screen and (max-width: 590px){
-
-    header, .holders{
-      overflow: hidden;
-    }
+  .holder2 {
+    padding: 20px 20px;
   }
 
-  @media screen and (max-width: 540px){
-    header button {
-      height: 35px;
-      width: 100px;
-      font-size: 15px;
-      font-weight: 300px;
-      line-height: 20px;
-    }
-
-    .coach {
-      display: none;
-    }
-
-    .holder2{
-      padding: 20px 20px;
-    }
-
-    .holder3{
-      padding: 30px 10px;
-    }
-
-    .holder4{
-      padding: 10px 20px 5px;
-    }
-
-    .holder5{
-      padding: 5px 10px 5px;
-      min-height: 200px;
-      max-height: 300px;
-    }
-
-    .vrset {
-      display: none;
-    }
+  .holder3 {
+    padding: 20px 10px 35px;
   }
 
-  @media screen and (max-width:450px){
-    
+  .holder4 {
+    padding: 10px 20px 5px;
+  }
+
+  .holder5 {
+    padding: 5px 10px 5px;
+    min-height: 200px;
+    max-height: 300px;
+  }
+
+  .vrset {
+    height: 200px;
+    width: 380px;
+    left: 45px;
+    top: 100px;
+  }
+ 
+}
+
+@media screen and (max-width: 500px) {
+  .holder3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px 10px 50px;;
+  }
+
+  .holder4{
+    margin-top: -28px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .regbtn {
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .watchbtn {
+    display: inline-block;
+    margin: 15px 0px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 460px){
+  .vrset{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    /* grid-auto-rows: minmax(auto); */
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    /* border: 1px solid red; */
+  }
+
+  h2 {
+    grid-column: 1/2;
+    /* grid-row: 2; */
+  }
+
+  .searchbox {
+    grid-column: 2/3;
+    /* grid-row: 2; */
+  }
+
+  .links {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  header button {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+
+
+  .bigtop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media screen and (max-width: 300px) {
+  .holder3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 10px 95px;;
+  }
+
+  .holder4{
+    margin-top: -68px;
+  }
+
+  .holder5 h3{
+    font-size: 40px;
   }
   
+  footer{
+    font-size: 16px;
+  }
+
+  header h2{
+    font-size: 30px;
+  }
 }
