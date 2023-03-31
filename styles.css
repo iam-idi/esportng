@@ -497,9 +497,9 @@ footer {
       top: 95px;
     }
 
-    img {
+    /* img {
       border: 1px solid red;
-    }
+    } */
 
     .mancenter {
       /* height: 400px; */
@@ -516,7 +516,7 @@ footer {
       gap: 5px;
       align-items: center;
       justify-items: center;
-      border: 1px solid red;
+      /* border: 1px solid red; */
     }
 
     h2 {
