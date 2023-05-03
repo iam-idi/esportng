@@ -850,10 +850,6 @@ footer {
 }
 
 @media screen and (max-width: 380px){
-  
-  header button{
-    
-  }
 
   .searchbox {
     height: 26px;
