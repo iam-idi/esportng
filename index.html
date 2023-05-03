@@ -18,13 +18,13 @@
     <main>
         <header>
             <h2>Esport<span>NG</span></h2>
-            <a class="menu"></a>
-            <div class="searchbox">
+            <a class="menu" onclick="myFunc(), boxFunc(), btnFunc()"></a>
+            <div class="searchbox" id="sbox">
                 <input type="search" class="search" placeholder="search for games, tournament, players....."
                     id="search">
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
-            <div class="links">
+            <div class="links" id="showHide">
                 <a href="#">
                     Home
                 </a>
@@ -41,7 +41,7 @@
                     Profile
                 </a>
             </div>
-            <a href="#"><button type="menu">Log out</button></a>
+            <a class="logbtnanchore" href="#"><button type="menu" id="btnbox">Log out</button></a>
         </header>
 
         <div class="container">
@@ -168,7 +168,7 @@
 
 
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
     <script src="script.js"></script>
 </body>
 

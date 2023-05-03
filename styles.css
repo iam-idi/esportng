@@ -56,6 +56,10 @@ h2 {
   font-weight: 500px;
 }
 
+.menu{
+  display: none;
+}
+
 .searchbox {
   height: 26px;
   width: 314px;
@@ -623,9 +627,12 @@ footer {
 }
 
 @media screen and (max-width: 600px){
+  .container{
+    margin-top: -5px;
+  }
   header {
     display: block;
-    padding-top: 10px ;
+    padding-top: 10px;
     padding-left: 5px;
   }
   
@@ -644,21 +651,23 @@ footer {
     width: 314px;
     background-color: #212124;
     position: relative;
-    top: 270px;
+    top: 260px;
     /* left: 12px; */
     left: 3%;
     border-radius: 5px;
+    display: none;
+    margin-bottom: 15px;
   }
 
   .menu{
-    display: inline-block;
+    display: block;
     height: 40px;
     width: 40px;
     float: right;
     border-radius: 40%;
     background: url(images/menu.png) no-repeat 95% center;
     background-size: contain;
-    background-color: #5a5656;
+    background-color: rgba(170, 170, 170, 0.7);
   }
 
   .menu:hover{
@@ -681,24 +690,24 @@ footer {
     padding: 3px 5px 3px 5px;
   } */
   
-  /* header i {
+  header i {
     background-color: #212124;
     color: #fff;
-    font-size: 18px;
-    font-weight: 500px;
+    font-size: 16px;
+    font-weight: 0px;
     position: absolute;
     left: 10px;
     top: 3.5px;
-  } */
-
-  .links{
-    display: block;
   }
   
   .links a {
     display: block;
     padding: 10px 10px;
     border-bottom: 2px solid #5a5656;
+  }
+
+  .links{
+    display: none;
   }
 
   .links a:hover {
@@ -708,15 +717,15 @@ footer {
   header button {
     height: 35px;
     width: 90px;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     border-radius: 20px;
     font-size: 16px;
     font-weight: 0px;
     line-height: 0px;
     position: relative;
-    /* left: 430px; */
-    left: 75%;
-
+    left: 75%;   
+    display: none;
   }
   
 }
@@ -777,6 +786,7 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
   .holder3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -787,6 +797,20 @@ footer {
   .holder4{
     margin-top: -28px;
   }
+
+  .searchbox{
+    /* display: block; */
+    left: 0;
+    margin: 0px auto 5px;
+  }
+
+  header button{
+    /* display: block; */
+    margin: 15px auto 50px;
+    left: 0;
+    top: 50px;
+  }
+
 }
 
 @media screen and (max-width: 485px) {
@@ -816,6 +840,45 @@ footer {
   .bigtop {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu{
+    height: 35px;
+    width: 35px;
+  }
+
+}
+
+@media screen and (max-width: 380px){
+  
+  header button{
+    
+  }
+
+  .searchbox {
+    height: 26px;
+    /* width: 314px; */
+    width: 90%;
+  }
+
+  header i {
+    width: 10%;
+    background-color: #212124;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 0px;
+    position: absolute;
+    left: 10px;
+    top: 3.5px;
+
+  }
+
+   input {
+    width: 90%;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 18px;
+    padding: 3px 5px 3px 5px;
   }
 
 }
